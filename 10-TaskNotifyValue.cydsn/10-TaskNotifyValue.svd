@@ -9,7 +9,7 @@
     <peripheral>
       <name>DMAC</name>
       <description>DMAC Registers</description>
-      <baseAddress>0x40000000</baseAddress>
+      <baseAddress>0x0</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -19,7 +19,7 @@
         <register>
           <name>DMAC_CTL</name>
           <description>DMA controller control register</description>
-          <addressOffset>0x101000</addressOffset>
+          <addressOffset>0x40101000</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -49,7 +49,7 @@
         <register>
           <name>DMAC_STATUS</name>
           <description>DMA controller status register</description>
-          <addressOffset>0x101010</addressOffset>
+          <addressOffset>0x40101010</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -163,7 +163,7 @@
         <register>
           <name>DMAC_STATUS_SRC_ADDR</name>
           <description>Source address currently being used by the DMA controller</description>
-          <addressOffset>0x101014</addressOffset>
+          <addressOffset>0x40101014</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -181,7 +181,7 @@
         <register>
           <name>DMAC_STATUS_DST_ADDR</name>
           <description>Destination address currently being used by the DMA controller</description>
-          <addressOffset>0x101018</addressOffset>
+          <addressOffset>0x40101018</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -199,7 +199,7 @@
         <register>
           <name>DMAC_STATUS_CH_ACT</name>
           <description>Channel activation status</description>
-          <addressOffset>0x10101C</addressOffset>
+          <addressOffset>0x4010101C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -217,7 +217,7 @@
         <register>
           <name>DMAC_CH_CTL0</name>
           <description>DMA channel 0 control register</description>
-          <addressOffset>0x101080</addressOffset>
+          <addressOffset>0x40101080</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -273,7 +273,7 @@
         <register>
           <name>DMAC_CH_CTL1</name>
           <description>DMA channel 1 control register</description>
-          <addressOffset>0x101084</addressOffset>
+          <addressOffset>0x40101084</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -329,7 +329,7 @@
         <register>
           <name>DMAC_CH_CTL2</name>
           <description>DMA channel 2 control register</description>
-          <addressOffset>0x101088</addressOffset>
+          <addressOffset>0x40101088</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -385,7 +385,7 @@
         <register>
           <name>DMAC_CH_CTL3</name>
           <description>DMA channel 3 control register</description>
-          <addressOffset>0x10108C</addressOffset>
+          <addressOffset>0x4010108C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -441,7 +441,7 @@
         <register>
           <name>DMAC_CH_CTL4</name>
           <description>DMA channel 4 control register</description>
-          <addressOffset>0x101090</addressOffset>
+          <addressOffset>0x40101090</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -497,7 +497,7 @@
         <register>
           <name>DMAC_CH_CTL5</name>
           <description>DMA channel 5 control register</description>
-          <addressOffset>0x101094</addressOffset>
+          <addressOffset>0x40101094</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -553,7 +553,7 @@
         <register>
           <name>DMAC_CH_CTL6</name>
           <description>DMA channel 6 control register</description>
-          <addressOffset>0x101098</addressOffset>
+          <addressOffset>0x40101098</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -609,7 +609,7 @@
         <register>
           <name>DMAC_CH_CTL7</name>
           <description>DMA channel 7 control register</description>
-          <addressOffset>0x10109C</addressOffset>
+          <addressOffset>0x4010109C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -665,7 +665,7 @@
         <register>
           <name>DMAC_INTR</name>
           <description>Interrupt register</description>
-          <addressOffset>0x1017F0</addressOffset>
+          <addressOffset>0x401017F0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -683,7 +683,7 @@
         <register>
           <name>DMAC_INTR_SET</name>
           <description>Interrupt set register</description>
-          <addressOffset>0x1017F4</addressOffset>
+          <addressOffset>0x401017F4</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -701,7 +701,7 @@
         <register>
           <name>DMAC_INTR_MASK</name>
           <description>Interrupt mask register</description>
-          <addressOffset>0x1017F8</addressOffset>
+          <addressOffset>0x401017F8</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -719,7 +719,7 @@
         <register>
           <name>DMAC_INTR_MASKED</name>
           <description>Interrupt masked register</description>
-          <addressOffset>0x1017FC</addressOffset>
+          <addressOffset>0x401017FC</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -737,7 +737,7 @@
         <register>
           <name>DMAC_DESCR0_PING_SRC</name>
           <description>Descriptor 0 source address location for channel 0</description>
-          <addressOffset>0x101800</addressOffset>
+          <addressOffset>0x40101800</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -755,7 +755,7 @@
         <register>
           <name>DMAC_DESCR0_PING_DST</name>
           <description>Descriptor 0 destination address location for channel 0</description>
-          <addressOffset>0x101804</addressOffset>
+          <addressOffset>0x40101804</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -773,7 +773,7 @@
         <register>
           <name>DMAC_DESCR0_PING_CTL</name>
           <description>Descriptor 0 control register for channel 0</description>
-          <addressOffset>0x101808</addressOffset>
+          <addressOffset>0x40101808</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -972,7 +972,7 @@
         <register>
           <name>DMAC_DESCR0_PING_STATUS</name>
           <description>Descriptor 0 status register for channel 0</description>
-          <addressOffset>0x10180C</addressOffset>
+          <addressOffset>0x4010180C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1053,7 +1053,7 @@
         <register>
           <name>DMAC_DESCR0_PONG_SRC</name>
           <description>Descriptor 1 source address location for channel 0</description>
-          <addressOffset>0x101810</addressOffset>
+          <addressOffset>0x40101810</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1071,7 +1071,7 @@
         <register>
           <name>DMAC_DESCR0_PONG_DST</name>
           <description>Descriptor 1 destination address location for channel 0</description>
-          <addressOffset>0x101814</addressOffset>
+          <addressOffset>0x40101814</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1089,7 +1089,7 @@
         <register>
           <name>DMAC_DESCR0_PONG_CTL</name>
           <description>Descriptor 1 control register for channel 0</description>
-          <addressOffset>0x101818</addressOffset>
+          <addressOffset>0x40101818</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1288,7 +1288,7 @@
         <register>
           <name>DMAC_DESCR0_PONG_STATUS</name>
           <description>Descriptor 1 status register for channel 0</description>
-          <addressOffset>0x10181C</addressOffset>
+          <addressOffset>0x4010181C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1369,7 +1369,7 @@
         <register>
           <name>DMAC_DESCR1_PING_SRC</name>
           <description>Descriptor 0 source address location for channel 1</description>
-          <addressOffset>0x101820</addressOffset>
+          <addressOffset>0x40101820</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1387,7 +1387,7 @@
         <register>
           <name>DMAC_DESCR1_PING_DST</name>
           <description>Descriptor 0 destination address location for channel 1</description>
-          <addressOffset>0x101824</addressOffset>
+          <addressOffset>0x40101824</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1405,7 +1405,7 @@
         <register>
           <name>DMAC_DESCR1_PING_CTL</name>
           <description>Descriptor 0 control register for channel 1</description>
-          <addressOffset>0x101828</addressOffset>
+          <addressOffset>0x40101828</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1604,7 +1604,7 @@
         <register>
           <name>DMAC_DESCR1_PING_STATUS</name>
           <description>Descriptor 0 status register for channel 1</description>
-          <addressOffset>0x10182C</addressOffset>
+          <addressOffset>0x4010182C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1685,7 +1685,7 @@
         <register>
           <name>DMAC_DESCR1_PONG_SRC</name>
           <description>Descriptor 1 source address location for channel 1</description>
-          <addressOffset>0x101830</addressOffset>
+          <addressOffset>0x40101830</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1703,7 +1703,7 @@
         <register>
           <name>DMAC_DESCR1_PONG_DST</name>
           <description>Descriptor 1 destination address location for channel 1</description>
-          <addressOffset>0x101834</addressOffset>
+          <addressOffset>0x40101834</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1721,7 +1721,7 @@
         <register>
           <name>DMAC_DESCR1_PONG_CTL</name>
           <description>Descriptor 1 control register for channel 1</description>
-          <addressOffset>0x101838</addressOffset>
+          <addressOffset>0x40101838</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1920,7 +1920,7 @@
         <register>
           <name>DMAC_DESCR1_PONG_STATUS</name>
           <description>Descriptor 1 status register for channel 1</description>
-          <addressOffset>0x10183C</addressOffset>
+          <addressOffset>0x4010183C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2001,7 +2001,7 @@
         <register>
           <name>DMAC_DESCR2_PING_SRC</name>
           <description>Descriptor 0 source address location for channel 2</description>
-          <addressOffset>0x101840</addressOffset>
+          <addressOffset>0x40101840</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2019,7 +2019,7 @@
         <register>
           <name>DMAC_DESCR2_PING_DST</name>
           <description>Descriptor 0 destination address location for channel 2</description>
-          <addressOffset>0x101844</addressOffset>
+          <addressOffset>0x40101844</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2037,7 +2037,7 @@
         <register>
           <name>DMAC_DESCR2_PING_CTL</name>
           <description>Descriptor 0 control register for channel 2</description>
-          <addressOffset>0x101848</addressOffset>
+          <addressOffset>0x40101848</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2236,7 +2236,7 @@
         <register>
           <name>DMAC_DESCR2_PING_STATUS</name>
           <description>Descriptor 0 status register for channel 2</description>
-          <addressOffset>0x10184C</addressOffset>
+          <addressOffset>0x4010184C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2317,7 +2317,7 @@
         <register>
           <name>DMAC_DESCR2_PONG_SRC</name>
           <description>Descriptor 1 source address location for channel 2</description>
-          <addressOffset>0x101850</addressOffset>
+          <addressOffset>0x40101850</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2335,7 +2335,7 @@
         <register>
           <name>DMAC_DESCR2_PONG_DST</name>
           <description>Descriptor 1 destination address location for channel 2</description>
-          <addressOffset>0x101854</addressOffset>
+          <addressOffset>0x40101854</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2353,7 +2353,7 @@
         <register>
           <name>DMAC_DESCR2_PONG_CTL</name>
           <description>Descriptor 1 control register for channel 2</description>
-          <addressOffset>0x101858</addressOffset>
+          <addressOffset>0x40101858</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2552,7 +2552,7 @@
         <register>
           <name>DMAC_DESCR2_PONG_STATUS</name>
           <description>Descriptor 1 status register for channel 2</description>
-          <addressOffset>0x10185C</addressOffset>
+          <addressOffset>0x4010185C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2633,7 +2633,7 @@
         <register>
           <name>DMAC_DESCR3_PING_SRC</name>
           <description>Descriptor 0 source address location for channel 3</description>
-          <addressOffset>0x101860</addressOffset>
+          <addressOffset>0x40101860</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2651,7 +2651,7 @@
         <register>
           <name>DMAC_DESCR3_PING_DST</name>
           <description>Descriptor 0 destination address location for channel 3</description>
-          <addressOffset>0x101864</addressOffset>
+          <addressOffset>0x40101864</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2669,7 +2669,7 @@
         <register>
           <name>DMAC_DESCR3_PING_CTL</name>
           <description>Descriptor 0 control register for channel 3</description>
-          <addressOffset>0x101868</addressOffset>
+          <addressOffset>0x40101868</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2868,7 +2868,7 @@
         <register>
           <name>DMAC_DESCR3_PING_STATUS</name>
           <description>Descriptor 0 status register for channel 3</description>
-          <addressOffset>0x10186C</addressOffset>
+          <addressOffset>0x4010186C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2949,7 +2949,7 @@
         <register>
           <name>DMAC_DESCR3_PONG_SRC</name>
           <description>Descriptor 1 source address location for channel 3</description>
-          <addressOffset>0x101870</addressOffset>
+          <addressOffset>0x40101870</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2967,7 +2967,7 @@
         <register>
           <name>DMAC_DESCR3_PONG_DST</name>
           <description>Descriptor 1 destination address location for channel 3</description>
-          <addressOffset>0x101874</addressOffset>
+          <addressOffset>0x40101874</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2985,7 +2985,7 @@
         <register>
           <name>DMAC_DESCR3_PONG_CTL</name>
           <description>Descriptor 1 control register for channel 3</description>
-          <addressOffset>0x101878</addressOffset>
+          <addressOffset>0x40101878</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3184,7 +3184,7 @@
         <register>
           <name>DMAC_DESCR3_PONG_STATUS</name>
           <description>Descriptor 1 status register for channel 3</description>
-          <addressOffset>0x10187C</addressOffset>
+          <addressOffset>0x4010187C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3265,7 +3265,7 @@
         <register>
           <name>DMAC_DESCR4_PING_SRC</name>
           <description>Descriptor 0 source address location for channel 4</description>
-          <addressOffset>0x101880</addressOffset>
+          <addressOffset>0x40101880</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3283,7 +3283,7 @@
         <register>
           <name>DMAC_DESCR4_PING_DST</name>
           <description>Descriptor 0 destination address location for channel 4</description>
-          <addressOffset>0x101884</addressOffset>
+          <addressOffset>0x40101884</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3301,7 +3301,7 @@
         <register>
           <name>DMAC_DESCR4_PING_CTL</name>
           <description>Descriptor 0 control register for channel 4</description>
-          <addressOffset>0x101888</addressOffset>
+          <addressOffset>0x40101888</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3500,7 +3500,7 @@
         <register>
           <name>DMAC_DESCR4_PING_STATUS</name>
           <description>Descriptor 0 status register for channel 4</description>
-          <addressOffset>0x10188C</addressOffset>
+          <addressOffset>0x4010188C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3581,7 +3581,7 @@
         <register>
           <name>DMAC_DESCR4_PONG_SRC</name>
           <description>Descriptor 1 source address location for channel 4</description>
-          <addressOffset>0x101890</addressOffset>
+          <addressOffset>0x40101890</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3599,7 +3599,7 @@
         <register>
           <name>DMAC_DESCR4_PONG_DST</name>
           <description>Descriptor 1 destination address location for channel 4</description>
-          <addressOffset>0x101894</addressOffset>
+          <addressOffset>0x40101894</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3617,7 +3617,7 @@
         <register>
           <name>DMAC_DESCR4_PONG_CTL</name>
           <description>Descriptor 1 control register for channel 4</description>
-          <addressOffset>0x101898</addressOffset>
+          <addressOffset>0x40101898</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3816,7 +3816,7 @@
         <register>
           <name>DMAC_DESCR4_PONG_STATUS</name>
           <description>Descriptor 1 status register for channel 4</description>
-          <addressOffset>0x10189C</addressOffset>
+          <addressOffset>0x4010189C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3897,7 +3897,7 @@
         <register>
           <name>DMAC_DESCR5_PING_SRC</name>
           <description>Descriptor 0 source address location for channel 5</description>
-          <addressOffset>0x1018A0</addressOffset>
+          <addressOffset>0x401018A0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3915,7 +3915,7 @@
         <register>
           <name>DMAC_DESCR5_PING_DST</name>
           <description>Descriptor 0 destination address location for channel 5</description>
-          <addressOffset>0x1018A4</addressOffset>
+          <addressOffset>0x401018A4</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3933,7 +3933,7 @@
         <register>
           <name>DMAC_DESCR5_PING_CTL</name>
           <description>Descriptor 0 control register for channel 5</description>
-          <addressOffset>0x1018A8</addressOffset>
+          <addressOffset>0x401018A8</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -4132,7 +4132,7 @@
         <register>
           <name>DMAC_DESCR5_PING_STATUS</name>
           <description>Descriptor 0 status register for channel 5</description>
-          <addressOffset>0x1018AC</addressOffset>
+          <addressOffset>0x401018AC</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -4213,7 +4213,7 @@
         <register>
           <name>DMAC_DESCR5_PONG_SRC</name>
           <description>Descriptor 1 source address location for channel 5</description>
-          <addressOffset>0x1018B0</addressOffset>
+          <addressOffset>0x401018B0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -4231,7 +4231,7 @@
         <register>
           <name>DMAC_DESCR5_PONG_DST</name>
           <description>Descriptor 1 destination address location for channel 5</description>
-          <addressOffset>0x1018B4</addressOffset>
+          <addressOffset>0x401018B4</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -4249,7 +4249,7 @@
         <register>
           <name>DMAC_DESCR5_PONG_CTL</name>
           <description>Descriptor 1 control register for channel 5</description>
-          <addressOffset>0x1018B8</addressOffset>
+          <addressOffset>0x401018B8</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -4448,7 +4448,7 @@
         <register>
           <name>DMAC_DESCR5_PONG_STATUS</name>
           <description>Descriptor 1 status register for channel 5</description>
-          <addressOffset>0x1018BC</addressOffset>
+          <addressOffset>0x401018BC</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -4529,7 +4529,7 @@
         <register>
           <name>DMAC_DESCR6_PING_SRC</name>
           <description>Descriptor 0 source address location for channel 6</description>
-          <addressOffset>0x1018C0</addressOffset>
+          <addressOffset>0x401018C0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -4547,7 +4547,7 @@
         <register>
           <name>DMAC_DESCR6_PING_DST</name>
           <description>Descriptor 0 destination address location for channel 6</description>
-          <addressOffset>0x1018C4</addressOffset>
+          <addressOffset>0x401018C4</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -4565,7 +4565,7 @@
         <register>
           <name>DMAC_DESCR6_PING_CTL</name>
           <description>Descriptor 0 control register for channel 6</description>
-          <addressOffset>0x1018C8</addressOffset>
+          <addressOffset>0x401018C8</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -4764,7 +4764,7 @@
         <register>
           <name>DMAC_DESCR6_PING_STATUS</name>
           <description>Descriptor 0 status register for channel 6</description>
-          <addressOffset>0x1018CC</addressOffset>
+          <addressOffset>0x401018CC</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -4845,7 +4845,7 @@
         <register>
           <name>DMAC_DESCR6_PONG_SRC</name>
           <description>Descriptor 1 source address location for channel 6</description>
-          <addressOffset>0x1018D0</addressOffset>
+          <addressOffset>0x401018D0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -4863,7 +4863,7 @@
         <register>
           <name>DMAC_DESCR6_PONG_DST</name>
           <description>Descriptor 1 destination address location for channel 6</description>
-          <addressOffset>0x1018D4</addressOffset>
+          <addressOffset>0x401018D4</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -4881,7 +4881,7 @@
         <register>
           <name>DMAC_DESCR6_PONG_CTL</name>
           <description>Descriptor 1 control register for channel 6</description>
-          <addressOffset>0x1018D8</addressOffset>
+          <addressOffset>0x401018D8</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5080,7 +5080,7 @@
         <register>
           <name>DMAC_DESCR6_PONG_STATUS</name>
           <description>Descriptor 1 status register for channel 6</description>
-          <addressOffset>0x1018DC</addressOffset>
+          <addressOffset>0x401018DC</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5161,7 +5161,7 @@
         <register>
           <name>DMAC_DESCR7_PING_SRC</name>
           <description>Descriptor 0 source address location for channel 7</description>
-          <addressOffset>0x1018E0</addressOffset>
+          <addressOffset>0x401018E0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5179,7 +5179,7 @@
         <register>
           <name>DMAC_DESCR7_PING_DST</name>
           <description>Descriptor 0 destination address location for channel 7</description>
-          <addressOffset>0x1018E4</addressOffset>
+          <addressOffset>0x401018E4</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5197,7 +5197,7 @@
         <register>
           <name>DMAC_DESCR7_PING_CTL</name>
           <description>Descriptor 0 control register for channel 7</description>
-          <addressOffset>0x1018E8</addressOffset>
+          <addressOffset>0x401018E8</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5396,7 +5396,7 @@
         <register>
           <name>DMAC_DESCR7_PING_STATUS</name>
           <description>Descriptor 0 status register for channel 7</description>
-          <addressOffset>0x1018EC</addressOffset>
+          <addressOffset>0x401018EC</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5477,7 +5477,7 @@
         <register>
           <name>DMAC_DESCR7_PONG_SRC</name>
           <description>Descriptor 1 source address location for channel 7</description>
-          <addressOffset>0x1018F0</addressOffset>
+          <addressOffset>0x401018F0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5495,7 +5495,7 @@
         <register>
           <name>DMAC_DESCR7_PONG_DST</name>
           <description>Descriptor 1 destination address location for channel 7</description>
-          <addressOffset>0x1018F4</addressOffset>
+          <addressOffset>0x401018F4</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5513,7 +5513,7 @@
         <register>
           <name>DMAC_DESCR7_PONG_CTL</name>
           <description>Descriptor 1 control register for channel 7</description>
-          <addressOffset>0x1018F8</addressOffset>
+          <addressOffset>0x401018F8</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5712,7 +5712,7 @@
         <register>
           <name>DMAC_DESCR7_PONG_STATUS</name>
           <description>Descriptor 1 status register for channel 7</description>
-          <addressOffset>0x1018FC</addressOffset>
+          <addressOffset>0x401018FC</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
