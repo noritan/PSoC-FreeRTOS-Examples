@@ -132,7 +132,7 @@ void semaphore_Task(void *arg)
     {
         
         xSemaphoreTake(switchSemaphore,portMAX_DELAY);
-        UART_UartPutString("Taken Switch Semaphore\n");
+        UART_UartPutString("Taken Switch Semaphore\r\n");
     }
 }
 
