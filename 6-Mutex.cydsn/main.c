@@ -137,7 +137,7 @@ void semaphore_Task(void *arg)
     {
         
         xSemaphoreTake(switchSemaphore,portMAX_DELAY);
-        UART_UartPutString("Taken Switch Semaphore\n");
+        UART_UartPutString("Taken Switch Semaphore\r\n");
     }
 }
 
@@ -148,7 +148,7 @@ void countingSemaphore_Task(void *arg)
     while(1)
     {
         xSemaphoreTake(countingSemaphore,portMAX_DELAY);
-        sprintf(buff,"Count = %d\n",(int)uxSemaphoreGetCount( countingSemaphore ));
+        sprintf(buff,"Count = %d\r\n",(int)uxSemaphoreGetCount( countingSemaphore ));
         UART_UartPutString(buff);
     }
 }
