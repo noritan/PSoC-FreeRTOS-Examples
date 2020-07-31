@@ -121,6 +121,7 @@ void UART_Task(void *arg)
 
             }
         }
+        UART_ClearRxInterruptSource(UART_INTR_RX_NOT_EMPTY);
         UART_SetRxInterruptMode(UART_INTR_RX_NOT_EMPTY);
     }
 }
@@ -144,13 +145,8 @@ CY_ISR(isr_1_Handler)
 
 CY_ISR(uart_isr_Handler)
 {
-    uint32_t cause;
-    cause = UART_GetRxInterruptSource();
-    UART_ClearRxInterruptSource(cause);
-    
     UART_SetRxInterruptMode(0);
     xSemaphoreGiveFromISR(uartSemaphore,NULL);
-    
 }
 
 int main(void)
