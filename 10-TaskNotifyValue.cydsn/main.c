@@ -40,9 +40,13 @@ CY_ISR(uartHandler)
 {
     uint32_t intrBits = UART_GetRxInterruptSourceMasked();
     UART_SetRxInterruptMode(0); // Turn off the Rx interrupt
-    UART_ClearRxInterruptSource(UART_INTR_RX_NOT_EMPTY);
     BaseType_t xHigherPriorityTaskWoken;
-    xTaskNotifyFromISR( uartTaskHandle,intrBits,eSetValueWithOverwrite,&xHigherPriorityTaskWoken);
+    xTaskNotifyFromISR(
+        uartTaskHandle, // the UART task to be notified
+        intrBits, // interrupt bits are notified to the UART task
+        eSetValueWithOverwrite, // notified value will be overwritten
+        &xHigherPriorityTaskWoken // if higher priority task woken?
+    );
     portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
 }
 void UART_Task( void *arg)
@@ -60,23 +64,20 @@ void UART_Task( void *arg)
                          &intrBits, 
                          portMAX_DELAY );    /* Block indefinitely. */
       
-        switch(intrBits)
-        {
-            case UART_INTR_RX_NOT_EMPTY:
-                UART_UartPutString("Interrupt: FIFO Not Empty\n");
-            break;
-            
-            case UART_INTR_RX_ERR:
-                UART_UartPutString("Interrupt: Error\n");
-            break;
-                
-            case UART_INTR_RX_FULL:
-                UART_UartPutString("Interrupt: FIFO Full\n");
-            break;
-            
-            default:
-                UART_UartPutString("Interrupt: Unknown\n");
-            break;
+        if (intrBits & UART_INTR_RX_NOT_EMPTY) {
+            UART_UartPutString("Interrupt: FIFO Not Empty\n");
+            intrBits &= ~UART_INTR_RX_NOT_EMPTY;
+        }
+        if (intrBits & UART_INTR_RX_ERR) {
+            UART_UartPutString("Interrupt: Error\n");
+            intrBits &= ~UART_INTR_RX_ERR;
+        }
+        if (intrBits & UART_INTR_RX_FULL) {
+            UART_UartPutString("Interrupt: FIFO Full\n");
+            intrBits &= ~UART_INTR_RX_FULL;
+        }
+        if (intrBits) {
+            UART_UartPutString("Interrupt: Unknown\n");
         }
         
         while(UART_SpiUartGetRxBufferSize())
@@ -87,7 +88,7 @@ void UART_Task( void *arg)
             UART_UartPutString("\n");
         }
         // re-enable the interrupt
-        //UART_ClearRxInterruptSource(UART_INTR_RX_NOT_EMPTY);
+        UART_ClearRxInterruptSource(UART_INTR_RX_NOT_EMPTY);
         UART_SetRxInterruptMode(UART_INTR_RX_NOT_EMPTY);
     }
 }
